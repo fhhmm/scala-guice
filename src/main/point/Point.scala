@@ -1,3 +1,4 @@
+package point
 class Point(val x: Int, val y: Int) {
   def distance(that: Point): Int = {
     val xdiff = math.abs(this.x - that.x)
