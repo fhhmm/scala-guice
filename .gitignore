@@ -3,5 +3,7 @@
 .scala-build
 .vscode
 project
+*.class
+*.tasty
 
 **/target
