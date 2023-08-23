@@ -1,4 +1,4 @@
-package shape
+package shape.impl
 
 import shape.Shape
 

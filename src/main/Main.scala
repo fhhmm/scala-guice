@@ -1,5 +1,5 @@
 import point.Point
-import shape._
+import shape.impl._
 
 object Main {
   def main(args: Array[String]): Unit = {
