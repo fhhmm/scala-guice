@@ -1,9 +1,11 @@
+import employee.Employee
 import point.Point
 import shape.impl._
 
 object Main {
   def main(args: Array[String]): Unit = {
-    call_shape()
+    val alice = new Employee("Alice")
+    alice.display()
   }
 
   def call_point(): Unit = {
