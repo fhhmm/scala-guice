@@ -1,11 +1,22 @@
 import employee.Employee
 import point.Point
 import shape.impl._
+import shop.Shop
 
 object Main {
   def main(args: Array[String]): Unit = {
-    val alice = new Employee("Alice")
-    alice.display()
+    call_shop()
+  }
+
+  def call_shop(): Unit = {
+    val shop = new Shop("Shop1")
+
+    // shop.filter(x => x.age >= 20)
+    shop.filter(_.age >= 20)
+
+    shop.map(_.name)
+    shop.toList
+    shop.display()
   }
 
   def call_point(): Unit = {
