@@ -1,4 +1,3 @@
-import employee.Employee
 import point.Point
 import shape.impl._
 
