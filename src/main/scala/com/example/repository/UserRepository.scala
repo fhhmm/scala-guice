@@ -6,5 +6,5 @@ case class User(
   age: Int)
 
 trait UserRepository {
-  def findUser(id: String): Option[User]
+  def findBy(id: String): Option[User]
 }

@@ -12,5 +12,5 @@ class InMemoryUserRepository @Inject() () extends UserRepository {
     "3" -> User("3", "Charlie", 35)
   )
 
-  override def findUser(id: String): Option[User] = users.get(id)
+  override def findBy(id: String): Option[User] = users.get(id)
 }
