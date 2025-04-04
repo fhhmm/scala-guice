@@ -1,9 +1,29 @@
-.bsp
-.metals
-.scala-build
-.vscode
-project
-*.class
-*.tasty
+# sbt specific
+target/
+project/target/
+project/project/
+project/metals.sbt
+.bloop/
+.metals/
+.vscode/
 
-**/target
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+
+# IDE specific
+.idea/
+*.iml
+*.iws
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Build files
+dist/
+out/ 
