@@ -1,4 +1,4 @@
-package com.example.config
+package com.example.module
 
 import com.example.repository.{ UserRepository, InMemoryUserRepository }
 import com.example.repository.{ AccountRepository, InMemoryAccountRepository }
