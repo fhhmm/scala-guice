@@ -11,5 +11,5 @@ class AppConfigModule extends AbstractModule {
   // Using @Provides pattern
   @Provides
   @Singleton
-  def provideUserRepository(impl: InMemoryAccountRepository): AccountRepository = impl
+  def provideAccountRepository(impl: InMemoryAccountRepository): AccountRepository = impl
 }
