@@ -5,7 +5,7 @@ import com.example.repository.{ AccountRepository, InMemoryAccountRepository }
 import com.google.inject.{ AbstractModule, Provides, Singleton }
 
 class AppConfigModule extends AbstractModule {
-  // Using @Provides pattern
+  // Using bind pattern
   override def configure(): Unit = bind(classOf[UserRepository]).to(classOf[InMemoryUserRepository])
 
   // Using @Provides pattern
