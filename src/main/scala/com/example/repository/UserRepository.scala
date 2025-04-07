@@ -1,10 +1,10 @@
 package com.example.repository
 
 case class User(
-  id: String,
+  id: Long,
   name: String,
   age: Int)
 
 trait UserRepository {
-  def findBy(id: String): Option[User]
+  def findBy(id: Long): Option[User]
 }

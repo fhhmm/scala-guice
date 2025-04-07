@@ -6,5 +6,5 @@ import com.example.repository.User
 
 @Singleton
 class UserService @Inject() (userRepository: UserRepository) {
-  def getUserBy(id: String): Option[User] = userRepository.findBy(id)
+  def getUserBy(id: Long): Option[User] = userRepository.findBy(id)
 }

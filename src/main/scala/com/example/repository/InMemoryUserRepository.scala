@@ -2,15 +2,14 @@ package com.example.repository
 
 import javax.inject.Inject
 import javax.inject.Singleton
-import scala.collection.mutable
 
 @Singleton
 class InMemoryUserRepository @Inject() () extends UserRepository {
-  private val users = mutable.Map[String, User](
-    "1" -> User("1", "Alice", 25),
-    "2" -> User("2", "Bob", 30),
-    "3" -> User("3", "Charlie", 35)
+  private val users = Map[Long, User](
+    1L -> User(1L, "Alice", 25),
+    2L -> User(2L, "Bob", 30),
+    3L -> User(3L, "Charlie", 35)
   )
 
-  override def findBy(id: String): Option[User] = users.get(id)
+  override def findBy(id: Long): Option[User] = users.get(id)
 }
